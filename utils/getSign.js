@@ -9,4 +9,4 @@ function getSign(mapList, apiString, timestamp) {
   return md5Crypto(toBeEncodedStr);
 }
 
-export default getSign;
+module.exports = getSign;

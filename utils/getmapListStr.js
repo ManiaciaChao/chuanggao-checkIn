@@ -5,4 +5,4 @@ function getmapListStr(mapList) {
   }
 }
 
-export default getmapListStr;
+module.exports = getmapListStr;

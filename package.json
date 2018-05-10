@@ -7,5 +7,8 @@
   "license": "MIT",
   "devDependencies": {
     "crypto": "^1.0.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }
