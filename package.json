@@ -1,0 +1,11 @@
+{
+  "name": "chuanggao-checkIn",
+  "version": "1.0.0",
+  "description": "A demo to check in in chuanggao App.",
+  "main": "index.js",
+  "author": "Letra",
+  "license": "MIT",
+  "devDependencies": {
+    "crypto": "^1.0.1"
+  }
+}
