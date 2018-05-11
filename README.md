@@ -6,7 +6,13 @@
 
 clone 仓库到本地之后，将config/congig.json中的XH值改成学号，将NAME值改成姓名
 
-然后依次执行命令`npm install`，`npm start`即可
+然后依次执行命令
+
+```shell
+cd <you-repository> # 进入clone下来的本地仓库
+npm install # or yarn install
+npm start # or yarn start
+```
 
 **同时感谢lyt技术支持👏👏**
 
@@ -222,6 +228,7 @@ function getSign(mapList, apiString, timestamp) {
 - 跑步实测真实数据形式
 - 多人一次打卡
 - 构建打卡UI
+- 加入测试
 - ...
 
 写完补充文档
