@@ -15,7 +15,6 @@ const data = {
   sign, 
   timestamp
 };
-console.log(data);
 createRequest(`${baseUrl}${apiString}`, 'POST', data, (error, response) => {
   if(error) {
     throw error;

@@ -7,5 +7,4 @@ function charListQuote (str) {
   return replacedStr;
 }
 
-console.log(charListQuote('{{[[123]]sdas}}'));
 module.exports = charListQuote;
