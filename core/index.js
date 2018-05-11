@@ -8,13 +8,13 @@ const apiString = '/api/v3/savesports';
 const timestamp = String(+new Date());
 const jsonsports = JSON.stringify(getJsonSports()).split('"').join('');
 const sign = getSign({jsonsports}, apiString, timestamp);
-
 const data = {
   app_key, 
   jsonsports, 
   sign, 
   timestamp
 };
+
 createRequest(`${baseUrl}${apiString}`, 'POST', data, (error, response) => {
   if(error) {
     throw error;
