@@ -12,7 +12,7 @@ function getCoordinateData (startTime, endTime) {
       let point ={
         a: String(X),
         o: String(Y),
-        v: '-1',
+        v: currentTime === startTime ? '1' : '-1',
         s: currentTime,
       };
       coordinateData.push(point);
@@ -21,8 +21,8 @@ function getCoordinateData (startTime, endTime) {
 }
 
 function coordinateMoving (position) {
-  let movingTarget = Math.random() * 0.01 + parseFloat(position);
-  return movingTarget;
+  let movingTarget = Math.random() * 0.0005+ parseFloat(position);
+  return movingTarget.toFixed(6);
 }
 
 module.exports = getCoordinateData;
