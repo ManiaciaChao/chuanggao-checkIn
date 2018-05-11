@@ -221,7 +221,7 @@ function getSign(mapList, apiString, timestamp) {
 }
 ```
 
-这样就简单了，还有一些小小细节的处理方式，那些有疑惑的需要都可以在源码里面解决啦
+这样就简单了，还有一些小小细节的处理方式，那些有疑惑的需要都可以在源码里面解决啦~
 
 ## TODO
 
@@ -231,4 +231,4 @@ function getSign(mapList, apiString, timestamp) {
 - 加入测试
 - ...
 
-写完补充文档
+持续更新...
