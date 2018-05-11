@@ -33,7 +33,7 @@ function getJsonSports() {
   JSON_SPORTS.name = CONFIG_DATA.NAME;
   JSON_SPORTS.stepCount = String(parseInt(sportDistance * 900));
   JSON_SPORTS.coordinate = coordinate;
-  return JSON_SPORTS;
+  return encodeURI(JSON.stringify(JSON_SPORTS)).replace(/%5B/g, '[').replace(/%5D/g, ']');
 }
 
 module.exports = getJsonSports;

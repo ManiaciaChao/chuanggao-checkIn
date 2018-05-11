@@ -6,7 +6,7 @@
   "author": "Letra",
   "license": "MIT",
   "devDependencies": {
-    "crypto": "^1.0.1",
+    "js-md5": "^0.7.3",
     "querystring": "^0.2.0",
     "request": "^2.85.0"
   },

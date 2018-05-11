@@ -13,7 +13,7 @@ function getCoordinateData (startTime, endTime) {
         a: String(X),
         o: String(Y),
         v: currentTime === startTime ? '1' : '-1',
-        s: currentTime,
+        s: String(currentTime),
       };
       coordinateData.push(point);
     }

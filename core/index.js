@@ -5,18 +5,17 @@ const createRequest = require('./createRequest');
 const app_key = 'cgsoft';
 const baseUrl = 'http://petzjk.hust.edu.cn/cgapp-server/';
 const apiString = '/api/v3/savesports';
-const timestamp = +new Date();
-const jsonsports = JSON.stringify(getJsonSports());
+const timestamp = String(+new Date());
+const jsonsports = JSON.stringify(getJsonSports()).split('"').join('');
 const sign = getSign({jsonsports}, apiString, timestamp);
-
 
 const data = {
   app_key, 
   jsonsports, 
   sign, 
   timestamp
-}
-
+};
+console.log(data);
 createRequest(`${baseUrl}${apiString}`, 'POST', data, (error, response) => {
   if(error) {
     throw error;

@@ -1,8 +1,7 @@
-const md5 = require('crypto').createHash('md5');
+const md5 = require('js-md5');
 
 function md5Crypto(input) {
-  md5.update(input);
-  return md5.digest('hex');
+  return md5(input);
 }
 
 module.exports = md5Crypto;
