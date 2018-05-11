@@ -6,7 +6,9 @@
   "author": "Letra",
   "license": "MIT",
   "devDependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.0",
+    "request": "^2.85.0"
   },
   "dependencies": {
     "dateformat": "^3.0.3",
