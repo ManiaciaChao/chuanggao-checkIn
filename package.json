@@ -9,6 +9,7 @@
     "crypto": "^1.0.1"
   },
   "dependencies": {
+    "dateformat": "^3.0.3",
     "fs": "^0.0.1-security"
   }
 }
