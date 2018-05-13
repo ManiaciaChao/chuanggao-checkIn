@@ -11,6 +11,9 @@ clone 仓库到本地之后，将config/congig.json中的XH值改成学号，将
 ```shell
 cd <you-repository> # 进入clone下来的本地仓库
 npm install # or yarn install
+npm generate #生成本地 打卡成员列表
+# 后续添加键入 npm input 可添加打卡成员功能
+# 然后在config/participants.json中按照json格式把键改成自己名字，值改成学号即可
 npm start # or yarn start
 ```
 
@@ -151,10 +154,10 @@ function getSign(mapList, apiString, timestamp) {
 
 ## TODO
 
-- 跑步实测真实数据形式
-- 多人一次打卡
 - 构建打卡UI
+
 - 加入测试
+- 提高本产品用户体验
 - ...
 
 持续更新...

@@ -20,10 +20,11 @@ function checkIn (participants) {
 
     createRequest(`${baseUrl}${apiString}`, 'POST', data, (error, response) => {
       if(error) {
+        console.log(`${name} checked in failed...`);
         throw error;
       }
       if(!error && response.statusCode === 200) {
-        console.log(response.body);
+        console.log(response.body, `${name} checked in success!`);
       }
     });
   }

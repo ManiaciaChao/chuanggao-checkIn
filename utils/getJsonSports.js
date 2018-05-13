@@ -4,7 +4,7 @@ const dateFormat = require('dateformat');
 const getCoordinateData = require('./getCoordinateData');
 
 const CONFIG_DATA = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../config/config.json')));
-const JSON_SPORTS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/jsonSports.json')));
+const JSON_SPORTS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/jsonSportDemo.json')));
 const COORDINAT_DEMO = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/coordinateDemo.json')));
 
 function getJsonSports(name, xh) {
