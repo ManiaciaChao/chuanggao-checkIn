@@ -14,11 +14,7 @@ npm install # or yarn install
 npm start # or yarn start
 ```
 
-**同时感谢lyt技术支持👏👏**
-
-
-
-很久很久以前，就总是忘掉打卡，就想把创高体育给破了，这样子就可以不用跑步也能打卡啦:D
+很久很久以前，就总是忘掉打卡，就想把创高体育给破了，这样子就可以不用跑步也能打卡啦:D **同时感谢lyt技术支持👏👏**
 
 ### 跑步
 
@@ -44,7 +40,7 @@ npm start # or yarn start
 
 ![catchTheRequest1](./images/catchTheRequest1.png)
 
-![](./images/catchTheRequestHeader.png)
+![catchTheRequestHeader](./images/catchTheRequestHeader.png)
 
 可以看到连headers都极其随意，甚至连cookie都没有！顿时信心满满
 
