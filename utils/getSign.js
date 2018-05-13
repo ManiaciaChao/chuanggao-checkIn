@@ -7,6 +7,7 @@ function getSign(mapList, apiString, timestamp) {
   let toBeEncodedStr;
   let mapListStr = getmapListStr(mapList);
   toBeEncodedStr =`${app_secret}${apiString}${mapListStr}${timestamp} ${app_secret}`;
+  console.log(toBeEncodedStr);
   return md5Crypto(toBeEncodedStr);
 }
 

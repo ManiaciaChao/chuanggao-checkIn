@@ -15,7 +15,8 @@ function getJsonSports() {
   let sportId = +new Date() - interval;
   let sportDistance = (CONFIG_DATA.SPORT_DISTANCE + Math.random()).toFixed(2);
   let avgSpeed = (sportDistance * 3600000 / interval).toFixed(1);
-  let coordinate = getCoordinateData(parseInt(startTimeStamp / 1000), parseInt(endTimeStamp / 1000));
+  // let coordinate = getCoordinateData(parseInt(startTimeStamp / 1000), parseInt(endTimeStamp / 1000));
+  let coordinate = JSON_SPORTS.coordinate;
 
   JSON_SPORTS.xh = CONFIG_DATA.XH;
   JSON_SPORTS.sportId = sportId;
@@ -32,7 +33,7 @@ function getJsonSports() {
   JSON_SPORTS.phoneVersion = CONFIG_DATA.PHONE_VERSION;
   JSON_SPORTS.name = CONFIG_DATA.NAME;
   JSON_SPORTS.stepCount = String(parseInt(sportDistance * 900));
-  JSON_SPORTS.coordinate = coordinate;
+  // JSON_SPORTS.coordinate = coordinate;
   return encodeURI(JSON.stringify(JSON_SPORTS)).replace(/%5B/g, '[').replace(/%5D/g, ']');
 }
 

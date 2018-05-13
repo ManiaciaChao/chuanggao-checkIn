@@ -7,10 +7,10 @@ function createRequest(url, method, data, callback) {
     method,
     headers: {
       'User-Agent': 'ChingoItemCGTY(Linux; iOS 11.2;iPhone HUUID/B6E3A84E-B928-4720-A6F9-A1390B3ED6BD)',
-      // 'Accept': '*/*',
+      'Accept': '*/*',
       'Content-Type': 'application/x-www-form-urlencoded',
-      // 'Connection': 'keep-alive',
-      // 'Accept-Encoding': 'br, gzip, deflate',
+      'Connection': 'keep-alive',
+      'Accept-Encoding': 'br, gzip, deflate',
     },
   };
 
