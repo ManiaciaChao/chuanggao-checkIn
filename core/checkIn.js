@@ -24,7 +24,7 @@ function checkIn (participants) {
         throw error;
       }
       if(!error && response.statusCode === 200) {
-        console.log(response.body, `${name} checked in success!`);
+        console.log(`${name} checked in success!`, response.body);
       }
     });
   }
