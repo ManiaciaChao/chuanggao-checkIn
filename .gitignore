@@ -13,3 +13,7 @@ yarn-error.log*
 
 # Record
 log/
+
+# Data
+data/participants.json
+config/participants.json

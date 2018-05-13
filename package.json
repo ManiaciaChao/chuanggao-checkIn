@@ -6,6 +6,8 @@
   "author": "Letra",
   "license": "MIT",
   "scripts": {
+    "generate": "cp ./data/participantsDemo.json ./config/participants.json",
+    "input": "./input.sh",
     "start": "node core/index.js"
   },
   "devDependencies": {

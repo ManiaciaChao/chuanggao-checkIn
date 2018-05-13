@@ -5,8 +5,9 @@ const getCoordinateData = require('./getCoordinateData');
 
 const CONFIG_DATA = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../config/config.json')));
 const JSON_SPORTS = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/jsonSports.json')));
+const COORDINAT_DEMO = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/coordinateDemo.json')));
 
-function getJsonSports() {
+function getJsonSports(name, xh) {
   let endTimeStamp = +new Date();
   let startTimeStamp = endTimeStamp - CONFIG_DATA.SPORT_TIME * 1000 - parseInt(1000 * (15 * Math.random() + 5));
   let endTime = dateFormat(endTimeStamp, 'yyyy-mm-dd HH:MM:ss');
@@ -16,9 +17,9 @@ function getJsonSports() {
   let sportDistance = (CONFIG_DATA.SPORT_DISTANCE + Math.random()).toFixed(2);
   let avgSpeed = (sportDistance * 3600000 / interval).toFixed(1);
   // let coordinate = getCoordinateData(parseInt(startTimeStamp / 1000), parseInt(endTimeStamp / 1000));
-  let coordinate = JSON_SPORTS.coordinate;
+  let coordinate = COORDINAT_DEMO;
 
-  JSON_SPORTS.xh = CONFIG_DATA.XH;
+  JSON_SPORTS.xh = xh;
   JSON_SPORTS.sportId = sportId;
   JSON_SPORTS.currentDate = currentDate;
   JSON_SPORTS.beginTime = currentDate;
@@ -31,7 +32,7 @@ function getJsonSports() {
   JSON_SPORTS.beganPoint = `${coordinate[0].a}|${coordinate[0].o}`;
   JSON_SPORTS.endPoint = `${coordinate[coordinate.length - 1].a}|${coordinate[coordinate.length - 1].o}`
   JSON_SPORTS.phoneVersion = CONFIG_DATA.PHONE_VERSION;
-  JSON_SPORTS.name = CONFIG_DATA.NAME;
+  JSON_SPORTS.name = name;
   JSON_SPORTS.stepCount = String(parseInt(sportDistance * 900));
   // JSON_SPORTS.coordinate = coordinate;
   return encodeURI(JSON.stringify(JSON_SPORTS)).replace(/%5B/g, '[').replace(/%5D/g, ']');
